@@ -1,8 +1,9 @@
 cabal-version:      2.2
 name:               text-table
 version:            0.1.0.0
-synopsis:           Haskell types for textual tables
--- description:
+synopsis:           Types for textual tables
+description:        Types shared by different tabular representations, as well
+                    as a type class for increased portability.
 license:            MIT
 license-file:       LICENSE
 author:             Albert Krewinkel

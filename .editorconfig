@@ -8,5 +8,8 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+[*.cabal,*.hs]
+max_line_length = 80
+
 [*.md]
 max_line_length = 66
