@@ -1,0 +1,45 @@
+cabal-version:      2.2
+name:               text-table
+version:            0.1.0.0
+synopsis:           Haskell types for textual tables
+-- description:
+license:            MIT
+license-file:       LICENSE
+author:             Albert Krewinkel
+maintainer:         albert@zeitkraut.de
+copyright:          © 2022 RStudio, PBC
+category:           Text
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+  ghc-options:      -Wall
+                    -Wcpp-undef
+                    -Widentities
+                    -Wincomplete-record-updates
+                    -Wincomplete-uni-patterns
+                    -Wmissing-export-lists
+                    -Wmissing-signatures
+                    -Wnoncanonical-monad-instances
+                    -Wpartial-fields
+                    -fhide-source-paths
+
+common basics
+  default-language: Haskell2010
+  build-depends:    base             >= 4.9    && < 5
+
+library
+  import:           basics
+                  , warnings
+  exposed-modules:  Text.Table
+  hs-source-dirs:   src
+
+test-suite text-table-test
+  import:           basics
+                  , warnings
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   test
+  main-is:          test-text-table.hs
+  build-depends:    text-table
+                  , tasty            >= 0.11
