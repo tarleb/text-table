@@ -34,6 +34,7 @@ library
                   , warnings
   exposed-modules:  Text.Table
                   , Text.Table.Cell
+                  , Text.Table.Class
   hs-source-dirs:   src
 
 test-suite text-table-test
