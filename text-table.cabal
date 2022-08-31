@@ -33,6 +33,7 @@ library
   import:           basics
                   , warnings
   exposed-modules:  Text.Table
+                  , Text.Table.Cell
   hs-source-dirs:   src
 
 test-suite text-table-test
