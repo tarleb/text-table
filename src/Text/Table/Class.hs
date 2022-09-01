@@ -1,4 +1,3 @@
-{-# LANGUAGE DerivingStrategies         #-}
 {-# LANGUAGE TypeFamilies               #-}
 {- |
 Module      : Text.Table.Class
@@ -8,7 +7,6 @@ Maintainer  : Albert Krewinkel <albert@zeitkraut.de>
 
 Typeclass for textual tables.
 -}
-
 module Text.Table.Class
   ( Table (..)
   , Cell (..)

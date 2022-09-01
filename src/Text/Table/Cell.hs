@@ -7,9 +7,8 @@ Copyright   : © 2022 RStudio, PBC
 License     : MIT
 Maintainer  : Albert Krewinkel <albert@zeitkraut.de>
 
-Typeclass for textual tables.
+Definitions for table cells.
 -}
-
 module Text.Table.Cell
   ( Cell (..)
   , RowSpan (..)
