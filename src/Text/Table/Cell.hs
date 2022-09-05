@@ -21,7 +21,7 @@ data Cell a = Cell
   , cellRowSpan :: RowSpan
   , cellColSpan :: ColSpan
   }
-  deriving stock (Eq, Ord, Show)
+  deriving stock (Eq, Ord, Read, Show)
 
 -- | The number of rows spanned by a cell.
 newtype RowSpan = RowSpan Int
